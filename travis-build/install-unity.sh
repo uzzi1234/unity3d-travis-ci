@@ -40,3 +40,8 @@ echo "Installing Unity..."
 install "$UNITY_OSX_PACKAGE"
 install "$UNITY_WINDOWS_TARGET_PACKAGE"
 
+
+script:
+  - xctool -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace TravisExample.xcworkspace -scheme TravisExampleTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
