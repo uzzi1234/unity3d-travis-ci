@@ -40,5 +40,5 @@ echo "Installing Unity..."
 install "$UNITY_OSX_PACKAGE"
 install "$UNITY_WINDOWS_TARGET_PACKAGE"
 
-
+sudo installer -dumplog -package Unity.pkg -target /
 
