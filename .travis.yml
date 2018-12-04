@@ -23,7 +23,6 @@ install:
 
 script:
 - ./travis-build/build.sh
-- executeMethod AutoBuild.BuidCommand
 - ./travis-build/run-tests.sh
 
 after_success:
