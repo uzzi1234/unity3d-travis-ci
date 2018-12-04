@@ -17,4 +17,4 @@ Do configure the `.travis.yml` file to your needs:
 
 ## Other notes
 
-It is possible to upgrade the version of Unity used in Travis-CI. See `install_unity.sh`. Not all Unity versions may be supported. 
+
